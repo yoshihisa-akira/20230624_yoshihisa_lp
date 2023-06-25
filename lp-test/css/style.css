@@ -3,29 +3,24 @@
     box-sizing: border-box;
 }
 
-.test {
-    background-color: aquamarine;
-    height: 100px;
-    width: 1000px;
+.webfont {
+    color: #b21466;
+    font-family: 'Indie Flower', cursive;
+    font-size: 0.8vw;
 }
 
-.test-bottom {
-    background-color: #777777;
-    height: 100px;
-    width: 1500px;
-}
-
+/* ヘッダー */
 .header {
     align-items: flex-end;
     display: flex;
     justify-content: space-between;
     margin: 1% 0;
     padding: 0 2% 1% 1%;
-    width: 100vw;
+    width: 100%;
 }
 
 .heder-left {
-    width: 50vw;
+    width: 50vw
 }
 
 .header__logo {
@@ -53,17 +48,16 @@
     margin-left: 4%;
 }
 
-
-
+/* ファーストビュー */
 .fv {
     position: relative;
-    width: 100vw;
+    width: 100%;
 }
 
 .fv__img {
     display: block;
     margin: 0 0 0 auto;
-    width: 60vw;
+    width: 60%;
 }
 
 .fv__ttl {
@@ -100,17 +94,11 @@
     line-height: 1.6em;
 }
 
-.webfont {
-    color: #b21466;
-    font-family: 'Indie Flower', cursive;
-    font-size: 0.8vw;
-}
-
 /* ニュース */
 .news {
     display: flex;
     padding: 7% 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .news__inner {
@@ -207,7 +195,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 8%;
-    width: 100vw;
+    width: 100%;
 }
 
 .service__grid {
@@ -514,20 +502,52 @@
 
 
 /* 会社概要 */
-.campany__table {
-    border: solid 1px #dedede;
+.company-webfont {
+    margin: 6% 0 1% 24.5%;
 }
 
+.company__ttl {
+    color: #727272;
+    margin: 0 0 0 24.5%;
+}
+
+.company--flex {
+    display: flex;
+        justify-content: center;
+        margin: 2% 0 5% 0;
+}
+
+.company__table {
+    width: 50vw;
+}
+
+.company__th {
+    border:solid 1px #d3d3d3;
+    background-color: #f5f5f5;
+    color: #717171;
+    font-size: 1.1vw;
+    padding: 2.5% 0 2.5% 2%;
+    text-align: left;
+    width: 14vw;
+}
+
+.company__td {
+    border: solid 1px #d3d3d3;
+    background-color: #fff;
+    color: #717171;
+    font-size: 1.1vw;
+    padding: 0 0 0 2%;
+}
 
 
 /* コンテンツ */
 .content {
-    background-color: aqua;
-    width: 100vw;
+    width: 100%;
 }
 
 .content-top {
     display: flex;
+    width: 100%;
 }
 
 .recruit {
@@ -535,7 +555,7 @@
 }
 
 .recruit__img {
-    width: 50vw;
+    width: 49.4vw;
 }
 
 .recruit__ttl {
@@ -553,7 +573,7 @@
 }
 
 .interview__img {
-    width: 50vw;
+    width: 49.4vw;
 }
 
 .interview__ttl {
@@ -566,7 +586,6 @@
     transform: translate(-50%, -50%);
 }
 
-
 .inquiry-inner {
     display: flex;
     justify-content: center;
@@ -576,12 +595,28 @@
     color: #737373;
     font-size: 1.5vw;
     font-weight: bold;
-    padding: 8% 0 3% 0;
+    padding: 5% 0 1.8% 0;
+}
+
+.line {
+    position: relative;
+}
+
+.line--position::before{
+    border-left: solid 3px #b61968;
+    content: "";
+    color: #ff0000;
+    left: 50%;
+    padding-bottom: 1.2%;
+    padding-top: 1.6%;
+    position: absolute;
+    top: 0%;
 }
 
 .inquiry-btn {
     display: flex;
     justify-content: center;
+    margin: 4.5% 0 6% 0;
     position: relative;
 }
 
@@ -596,8 +631,22 @@
 }
 
 .inquiry-btn-img {
-    width: 2.2vw;
-    position: absolute;
     left: 42%;
+    position: absolute;
     top: 30%;
+    width: 2.2vw;
+}
+
+/* フッター */
+.footer {
+    width: 100%;
+}
+
+.copyright {
+    background-color: #f5f5f5;
+    color: #7c7c7c;
+    display: block;
+    font-size: 1vw;
+    padding: 2% 0;
+    text-align: center;
 }

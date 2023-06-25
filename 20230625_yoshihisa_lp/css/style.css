@@ -539,7 +539,6 @@
     padding: 0 0 0 2%;
 }
 
-
 /* コンテンツ */
 .content {
     width: 100%;
@@ -552,10 +551,11 @@
 
 .recruit {
     position: relative;
+    width: 50%;
 }
 
 .recruit__img {
-    width: 49.4vw;
+    width: 100%;
 }
 
 .recruit__ttl {
@@ -570,10 +570,11 @@
 
 .interview {
     position: relative;
+    width: 50%;
 }
 
 .interview__img {
-    width: 49.4vw;
+    width: 100%;
 }
 
 .interview__ttl {
